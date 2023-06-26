@@ -19,7 +19,7 @@ export const POST = async (request: NextRequest, response: NextResponse) => {
       statusText: "Sucess",
     });
   } catch (error) {
-    console.log(error.message);
+    console.log(error);
     return new Response("Failed to Fetch", { status: 404 });
   }
 };
