@@ -16,7 +16,6 @@ const UrlBox: FC<PropTypes> = ({
   createdAt,
   original,
 }): JSX.Element => {
-  console.log(shortedLink);
   const [textCopy, setTextCopy] = useState(false);
   const textRef: any = useRef(null);
 

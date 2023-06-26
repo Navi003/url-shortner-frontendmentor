@@ -6,7 +6,6 @@ export const POST = async (request: NextRequest, response: NextResponse) => {
 
   const data = await request.json();
 
-  console.log(data);
   try {
     const res = await axios.get(
       `https://api.shrtco.de/v2/shorten?url=${data.url}`

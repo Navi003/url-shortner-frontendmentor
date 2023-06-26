@@ -47,11 +47,8 @@ const store: CustomStoreType = (set, get) => ({
           },
         ],
       });
-
-      console.log(get().url);
-      console.log(get().url);
     } catch (error) {
-      console.log(error.message);
+      console.error(error);
     }
   },
 });

@@ -38,8 +38,6 @@ export default function Home() {
             </div>
             <ul className="flex flex-col w-full m-24 mb-4 gap-7">
               {url.map((url) => {
-                console.log(url);
-
                 return (
                   <UrlBox
                     href={url.shortedLink}
